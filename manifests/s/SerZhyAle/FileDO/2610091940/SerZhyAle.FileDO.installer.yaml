@@ -1,0 +1,26 @@
+# Created using wingetcreate 1.12.8.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SerZhyAle.FileDO
+PackageVersion: "2610091940"
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: filedo.exe
+  PortableCommandAlias: filedo
+- RelativeFilePath: filedo_check.exe
+  PortableCommandAlias: filedo_check
+- RelativeFilePath: filedo_fill.exe
+  PortableCommandAlias: filedo_fill
+- RelativeFilePath: filedo_test.exe
+  PortableCommandAlias: filedo_test
+- RelativeFilePath: filedo_win.exe
+  PortableCommandAlias: filedo_win
+ArchiveBinariesDependOnPath: true
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/SerZhyAle/FileDO/releases/download/v2610091940/FileDO-2610091940-windows-x64.zip
+  InstallerSha256: 4E23CECC8D99F322C780C41F83FBD8617871C49B809560FEE8402F44617E3762
+ManifestType: installer
+ManifestVersion: 1.12.0
+ReleaseDate: 2026-10-09
